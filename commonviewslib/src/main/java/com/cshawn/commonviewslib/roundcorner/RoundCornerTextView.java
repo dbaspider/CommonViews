@@ -1,5 +1,6 @@
 package com.cshawn.commonviewslib.roundcorner;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
@@ -13,14 +14,15 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.ColorInt;
-import android.support.annotation.FloatRange;
-import android.support.annotation.IntDef;
-import android.support.annotation.IntRange;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.FloatRange;
+import androidx.annotation.IntDef;
+import androidx.annotation.IntRange;
+import androidx.annotation.Nullable;
 
 import com.cshawn.commonviewslib.R;
 
@@ -29,8 +31,10 @@ import com.cshawn.commonviewslib.R;
  *
  * @author C.Shawn
  */
+@SuppressLint("AppCompatCustomView")
 public class RoundCornerTextView extends TextView {
-    @ColorInt int stroke_color;
+    @ColorInt
+    int stroke_color;
     ColorStateList stroke_colors;
     @ColorInt int solid_color;
     ColorStateList solid_colors;

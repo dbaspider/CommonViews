@@ -2,8 +2,6 @@ package com.cshawn.commonviews;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.CheckBox;
@@ -11,6 +9,9 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+
+import androidx.annotation.IdRes;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.cshawn.commonviewslib.roundcorner.RoundCornerTextView;
 
